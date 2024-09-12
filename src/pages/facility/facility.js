@@ -140,15 +140,6 @@ function Facility() {
             <p className={cx("hospital-detail-text")}>Phòng khám Đa khoa Pháp Anh là một trong những cơ sở y tế chuyên khám tổng quát và xét nghiệm uy tín tại TP. Hồ Chí Minh và các tỉnh lân cận. Để hỗ trợ người dân tiếp cận dễ dàng hơn với các dịch vụ chất lượng tại đây, phòng khám đã gia nhập Medpro - ứng dụng đặt lịch khám uy tín hàng đầu tại Việt Nam.</p>
           </div>
         </div>
-        <div className={cx("hospital-details-container")}>
-          <div className={cx("hospital-detail")}>
-            <img src={logo} className={cx("hospital-details-logo")} />
-            <h4 className={cx("hospital-detail-title")}>Phòng Khám Đa Khoa Pháp Anh</h4>
-            <p className={cx("hospital-detail-time")}><strong><CiClock2 /></strong> Thứ 2 - Thứ 7: 07:00 - 16:00 | Chủ Nhật: 07:00 - 12:00</p>
-            <hr/>
-            <p className={cx("hospital-detail-text")}>Phòng khám Đa khoa Pháp Anh là một trong những cơ sở y tế chuyên khám tổng quát và xét nghiệm uy tín tại TP. Hồ Chí Minh và các tỉnh lân cận. Để hỗ trợ người dân tiếp cận dễ dàng hơn với các dịch vụ chất lượng tại đây, phòng khám đã gia nhập Medpro - ứng dụng đặt lịch khám uy tín hàng đầu tại Việt Nam.</p>
-          </div>
-        </div>
       </div>
     </div>
   );
