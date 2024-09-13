@@ -1,237 +1,264 @@
+* , ::after, ::before
+{
+  box-sizing: border-box;
+}
 .container{
-    width: 100%;
-    height: 100%;
-    background-color: #e8f2f7;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-.title {
-    width: 100%;
-    height: 300px;
-    background-color: white;
-}
-.navtitle{
-    height: 20%;
-    padding-left: 50px;
-    font-size: 16px;
-    margin-bottom: 5px;
-    text-align: left;
-    padding-top: 10px;
-}
-.texttitle{
-    height: 80%;
-    width: 100%;
-    text-align: center;
-}
-.text1{
-    display: block;
-    font-size: 40px;
-    color: rgb(6, 174, 241);
-    margin-bottom: 10px;
-    font-weight: 700;
-}
-.text2{
-    display: block;
-    font-size: 17px;
-    padding-bottom: 5px;
-}
-
-.search {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px auto;
-    width: 700px;
-    box-shadow: 4px 8px 30px 0 rgba(177, 196, 218, .35);
-    border-radius: 10px;
-}
-  
-.search input {
-    width: 600px; 
-    padding: 12px; 
-    font-size: 15px; 
-    border: 0px solid #ccc; 
-    border-left: 0px; 
-    outline: none; 
-    border-radius: 10px
-}
-.search a {
-    padding: 14px 5px; 
-    font-size: 11px; 
-    color: rgb(197, 190, 190); 
-    background-color: white;
-    border: 0px solid #ccc;
-    border-right: o;
-}
-
-/* styles.css */
-.menu_feature {
-    background-color: white;
-    display: flex;
-    justify-content: center; /* Căn giữa nội dung */
-    align-items: center; /* Căn giữa theo chiều dọc */
-    width: 100%;
-    height: 100px;
-    margin-top: 1px;
-  }
-  
-  .menu_feature ul {
-    list-style: none; /* Loại bỏ dấu chấm đầu dòng */
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: row; /* Hiển thị theo cột */
-    gap: 10px; /* Khoảng cách giữa các mục */
-  }
-  
-  .menu_feature li {
-    font-size: 18px; /* Kích thước chữ lớn hơn */
-    padding: 10px 15px; /* Khoảng cách bên trong mục */
-    background-color: #f8f9fa; /* Màu nền nhạt */
-    border: 1px solid #ddd; /* Đường viền nhạt */
-    border-radius: 8px; /* Bo góc nhẹ */
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Hiệu ứng chuyển đổi */
-  }
-  
-  .menu_feature li:hover {
-    background-color: #007bff; /* Đổi màu nền khi hover */
-    color: white; /* Đổi màu chữ khi hover */
-    transform: translateY(-3px); /* Hiệu ứng di chuyển nhẹ khi hover */
-    cursor: pointer; /* Thay đổi con trỏ khi hover */
-  }
-  
-  .content{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 100%;
-    padding: 20px;
-    background-color: none;
-    
-  }
-  .cards-container {
-    display: flex;
-    flex-direction: column; /* Sắp xếp theo chiều dọc */
-    gap: 20px; /* Khoảng cách giữa các thẻ */
-    width: 55%; /* Điều chỉnh để chiếm phần lớn không gian bên trái */
-  }
-.card-content {
-  display: flex;
-  flex-direction: row;
   width: 100%;
-  height: 220px;
-  background-color: white;
-  margin-top: 10px;
-  margin-left: 30px;
-  border-radius: 20px;
-  box-shadow: 4px 8px 30px 0 rgba(177, 196, 218, .35);
-  margin-bottom: 20px;
+  height: 10000px;
+  background-color: #e8f2f7;
 }
-
-.hospital-logo img {
-  width: 90px;
-  height: 90px;
-  margin-right: 16px;
-  padding-left: 20px;
-  margin-top: 20px;
+//////////////////////
+.title{
+  width: 100%;
+  background-color: #fdfdfd;
 }
-
-.hospital-details h3 {
+.nav-link {
+  margin: auto;
+  width: 100%;
+  max-width: 1180px;
+  padding-right: 0;
+  padding-left: 0;
+}
+.nav-link ul {
+  padding: 20px 0;
+  display:  flex;
+  align-items: center;
+  white-space: nowrap;
   margin: 0;
-  font-size: 30px;
-  font-weight: bold;
-  color: #333;
-  padding-top: 10px;
+  width: 100%;
 }
-
-.hospital-details p {
-  margin: 5px 0;
-  color: #666;
+.nav-link ul li {
+  display: flex ;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  padding-right: 5px;
 }
-
-.rating {
+.big-title{
+  padding-bottom: 15px;
+}
+.big-title,.big-title-head{
+  text-align: center;
+}
+.head-main-title {
+  color: #00b5f1;
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 9px;
+  line-height: 48px;
+  font-family: Montserrat, sans-serif !important;
+}
+.head-sub-title
+{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.75px;
+  text-align: center;
+  color: #003553;
+}
+.bib-title-body{
+  margin-top: 28px;
+}
+.body-form {
+  display: flex;
+  align-items: center ;
+  justify-content: center;
+  gap: 16px;
+  padding-top: 16px;
+}
+.body-form-content{
+  justify-content: space-between ;
+  width: 700px;
+  height: 52px;
+  box-shadow: 4px 8px 30px 0 rgba(177, 196, 218, .35);
+  overflow: hidden;
+  border-radius: 12px;
+  position: relative;
+  padding: 14px;
+  gap: 8px;
+}
+.body-form-item{
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
 }
-
-.rating span {
-  font-size: 16px;
-  font-weight: bold;
-  margin-right: 5px;
-  color: #f5b50a;
+.body-form-icon{
+  display: flex;
+  align-items: center;
 }
-
-.stars span {
+.body-form-input{
+  overflow: hidden ;
+}
+.body-form-inputItem{
+  width: 100%;
+}
+.input-form{
+  position: relative;
+  min-width: 0;
+  padding: 4px 11px;
+  color: rgba(0, 0, 0, .85);
   font-size: 14px;
-  color: #f5b50a;
-}
-
-.action-buttons {
-  margin-top: 10px;
-}
-
-.detail-button, .book-button {
-  padding: 8px 12px;
-  border: none;
-  border-radius: 25px;
-  width: 200px;
-  height: 40px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: box-shadow 0.3s ease;
-}
-
-.detail-button {
-  background-color: #ffffff;
-  color: blue;
-  border: 1px solid blue;
-  margin-right: 10px;
-}
-
-.book-button {
-  background-color: #00bcd4;
-  color: white;
-}
-
-.detail-button:hover, .book-button:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tạo bóng dưới */
-}
-
-.hospital-details-container {
-  width: 30%;
+  line-height: 1.5715;
+  border-radius: 3px;
   background-color: #fff;
-  border-radius: 10px;
+  display: inline-flex;
+  transition: all .3s;
+}
+.input-form::before{
+  width: 0;
+  visibility: hidden;
+  content: "\a0";
+}
+.input-form input{
+  padding: 0;
+  border: none;
+  outline: none;
+}
+.nav-menu{
+  list-style: none;
+  padding: 24px 0;
+  border-top: 1px solid #e3e3e3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  overflow-x: auto;
+  margin-top: 0 !important;
+}
+.nav-menu li button{
+  color: #06a2fd;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  padding: 10px 16px;
+  background: #ebf9fd;
+  border-radius: 40px;
+  border: 1px solid transparent;
+  transition: all .15s ease;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, .12);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, .045);
+}
+.nav-menu li button:hover{
+  box-shadow: 0 5px 0 rgba(0, 0, 0, .4 );
+}
+/////////////////////////
+.content{
+  max-width: 1180px;
+  padding-right: 0;
+  padding-left: 0;
+}
+.ex{
+  width: 100%;
+  margin: auto;
+}
+.left-content{
+  padding-top: 10px;
+  display: block;
+  flex: 0 0 62.5%;
+  max-width: 58%;
+  padding-left: 30px;
+  padding-right: 13px;
+}
+.content-detail{
+  position: relative;
+  align-items: center;
+  gap: 14px;
   padding: 20px;
-  box-shadow: 4px 8px 30px 0 rgba(177, 196, 218, .35);
-  margin-right: 60px;
-  margin-top: 10px;
+  border-radius: 20px;
+  width: 100%;
+  min-height: 130px;
+  margin-bottom: 26px;
+  background: #fff;
+  border: 2px solid transparent;
+  transition: all .23s ease;
+  border: 2px solid #00b5f1;
+  box-shadow: 0 4px 15px rgba(116, 157, 206, .5);
+  align-items: flex-start;
+  flex-direction: column;
+}
+.conent-data{
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+.content-image{
+  width: 190px;
+  height: 190px;
+}
+.content-body{
+  width: 100%;
+}
+.content-text{
+  width: 100%;
+  margin-bottom: 12px;
+}
+.content-title-text{
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 29px;
+  margin-bottom: 12px;
+  width: 90%;
+}
+.content-address{
+  display: flex;
+  gap: 7px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #858585;
+  margin-top: 8px;
+}
+.content-ratting {
+  margin-top: 8px;
+  color: #ffb54a;
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  display: flex; /* Sử dụng flexbox để căn chỉnh */
+  align-items: center; /* Đảm bảo thẳng hàng theo chiều dọc */
 }
 
-.hospital-detail-title {
-  color: #6fb0ed;
-  text-align: center;
-  font-size: 20px;
-  margin-bottom: 0;
+.content-ratting ul {
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-left: 6px;
+  font-size: 18px;
+  color: rgb(255, 181, 74);
 }
 
-.hospital-details-logo {
-  width: 150px;
-  height: auto;
-  margin-left: 120px;
+.content-ratting ul li {
+  display: inline-block;
+  margin-top: 0; /* Loại bỏ margin-top để thẳng hàng */
 }
-.hospital-detail-time{
-  color: #003553;
-  font-size: 16px;
-  text-align: center;
-  font-weight: 400;
+.content-button-ex{
+  display: flex;
+  justify-content: flex-end; /* Căn nút về phía bên phải */
+  margin-top: auto; /* Đẩy nút xuống phía dưới */
+  gap: 12px; /* Khoảng cách giữa các nút */
 }
-.hospital-detail-time strong{
-  color: #f5b50a;
-  font-size: 1.2rem;
-  padding-right: 10px;
+.content-button-ex button{
+  border: 1px solid #00b5f1;
+  height: 42px !important;
+  padding: 10px 16px;
+  width: 120px;
+  transition: all .3s ease;
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: normal;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
-.hospital-detail-text{
-  font-size: 16px;
-  font-weight: 400;
-  color: #003553;
-  line-height: 19px;
+.content-button-color{
+  background: linear-gradient(83.63deg, #00b5f1 33.34%, #00e0ff 113.91%);
+  color: #fff;
+}
+.content-button-ex button:hover{
+  box-shadow: 0 4px 15px rgba(116, 157, 206, .5);
 }

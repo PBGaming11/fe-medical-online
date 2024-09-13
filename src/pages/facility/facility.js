@@ -3,6 +3,7 @@ import style from './facility.module.scss';
 import { FaSearch } from "react-icons/fa";
 import logo from '../../content/pic1.jpg'
 import { IoLocationOutline } from "react-icons/io5";
+import { IoStar } from "react-icons/io5";
 import { CiClock2 } from "react-icons/ci";
 
 
@@ -12,136 +13,79 @@ function Facility() {
   return(
     <div className={cx('container')}>
       <div className={cx('title')}>
-      <div className={cx('navtitle')}>Trang chủ / </div>
-        <div className={cx('texttitle')}>
-          <a className={cx('text1')}>Bệnh viện công</a>
-          <a className={cx('text2')}>Đặt khám dễ dàng, không lo chờ đợi tại các bệnh viện công hàng đầu Việt </a>
-          <form className={cx('search')}>
-          <a><FaSearch /></a>
-          <input type="text" placeholder="Tìm kiếm..." />
-        </form>
+        <div className={cx('nav-link')}>
+          <ul>
+            <li><a href='#'>Trang chủ /</a></li>
+            <li><a href='#'>Cơ sở y tế</a></li>
+          </ul>
         </div>
-      </div>
-      <div className={cx('menu_feature')}>
-        <ul>
-          <li>Bệnh viện công(10)</li>
-          <li>Bệnh viện tư(10)</li>
-          <li>Phòng khám(10)</li>
-          <li>Phòng mạch(5)</li>
-          <li>Xét nghiệp(10)</li>
-          <li>Y tế tại nhà(7)</li>
-          <li>Tiêm chủng(4)</li>
+        <div className={cx('big-title')}>
+          <div className={cx('bib-title-head')}>
+            <h1 className={cx('head-main-title')}>Cơ sở y tế</h1>
+            <div className={cx('head-sub-title')}>Với những cơ sở Y Tế hàng đầu sẽ giúp trải nghiệm khám, chữa bệnh của bạn tốt hơn</div>
+          </div>
+          <div className={cx('bib-title-body')}>
+              <div className={cx('body-form')}>
+                <div className={cx('body-form-content')}>
+                  <div className={cx('body-form-item')}>
+                    <div className={cx('body-form-icon')}><FaSearch/></div>
+                    <div className={cx('body-form-input')}>
+                      <div className={cx('body-form-inputItem')}>
+                        <span className={cx('input-form')}>
+                          <input placeholder='Tìm kiếm' type='text'></input>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <ul className={cx('nav-menu')}>
+          <li><button>Bệnh viện công(20)</button></li>
+          <li><button>Bệnh viên tư(9)</button></li>
+          <li><button>Phòng khám(6)</button></li>
+          <li><button>Phòng mạch(17)</button></li>
+          <li><button>Xét nghiệm(3)</button></li>
+          <li><button>Y tế tại nhà(2)</button></li>
+          <li><button>Tiêm chủng(25)</button></li>
         </ul>
       </div>
-      <div className={cx('content')}>
-        <div className={cx("cards-container")}>
-          <div className={cx("card-content")}>
-            <div className={cx("hospital-logo")}>
-              <img src={logo} />
-            </div>
-            <div className={cx("hospital-details")}>
-              <h3>Bệnh viện đa khoa Singapore (Singapore General Hospital)</h3>
-              <p><IoLocationOutline /> Bukit Merah, Central Region, Singapore</p>
-              <div className={cx("rating")}>
-                <span>4.7</span>
-                <div className={cx("stars")}>
-                  <span>★ ★ ★ ★ ☆</span>
+      <div className={cx('content ex')}>
+        <div className={cx('content-item')}>
+          <div className={cx('row')}>
+            <div className={cx('left-content')}>
+              <div className={cx('content-detail')}>
+                <div className={cx('conent-data')}>
+                  <div className={cx('content-image')}><span><span><img src={logo}/></span></span></div>
+                  <div className={cx('content-body')}>
+                    <div className={cx('content-text')}>
+                      <h3 className={cx('content-title-text')}>Phòng Khám Đa Khoa Pháp Anh</h3>
+                      <p className={cx('content-address')}><IoLocationOutline/>222-224-226 Nguyễn Duy Dương, Phường 4, Quận 10, TP.HCM</p>
+                      <p className={cx('content-ratting')}>(4,7)
+                        <ul>
+                          <li><IoStar/></li>
+                          <li><IoStar/></li>
+                          <li><IoStar/></li>
+                          <li><IoStar/></li>
+                          <li><IoStar/></li>
+                        </ul>
+                      </p>
+                    </div>
+                  </div>
+                  <div className={cx('content-button-ex')}>
+                      <button><span>Xem chi tiết</span></button>
+                      <button className={cx('content-button-color')}><span>Đặt khám ngay </span></button>
+                    </div>
                 </div>
               </div>
-              <div className={cx("action-buttons")}>
-                <button className={cx("detail-button")}>Xem chi tiết</button>
-                <button className={cx("book-button")}>Đặt khám ngay</button>
-              </div>
             </div>
-          </div>
-          <div className={cx("card-content")}>
-            <div className={cx("hospital-logo")}>
-              <img src={logo} />
-            </div>
-            <div className={cx("hospital-details")}>
-              <h3>Bệnh viện đa khoa Singapore (Singapore General Hospital)</h3>
-              <p><IoLocationOutline /> Bukit Merah, Central Region, Singapore</p>
-              <div className={cx("rating")}>
-                <span>4.7</span>
-                <div className={cx("stars")}>
-                  <span>★ ★ ★ ★ ☆</span>
-                </div>
-              </div>
-              <div className={cx("action-buttons")}>
-                <button className={cx("detail-button")}>Xem chi tiết</button>
-                <button className={cx("book-button")}>Đặt khám ngay</button>
-              </div>
-            </div>
-          </div>
-          <div className={cx("card-content")}>
-            <div className={cx("hospital-logo")}>
-              <img src={logo} />
-            </div>
-            <div className={cx("hospital-details")}>
-              <h3>Bệnh viện đa khoa Singapore (Singapore General Hospital)</h3>
-              <p><IoLocationOutline /> Bukit Merah, Central Region, Singapore</p>
-              <div className={cx("rating")}>
-                <span>4.7</span>
-                <div className={cx("stars")}>
-                  <span>★ ★ ★ ★ ☆</span>
-                </div>
-              </div>
-              <div className={cx("action-buttons")}>
-                <button className={cx("detail-button")}>Xem chi tiết</button>
-                <button className={cx("book-button")}>Đặt khám ngay</button>
-              </div>
-            </div>
-          </div>
-          <div className={cx("card-content")}>
-            <div className={cx("hospital-logo")}>
-              <img src={logo} />
-            </div>
-            <div className={cx("hospital-details")}>
-              <h3>Bệnh viện đa khoa Singapore (Singapore General Hospital)</h3>
-              <p><IoLocationOutline /> Bukit Merah, Central Region, Singapore</p>
-              <div className={cx("rating")}>
-                <span>4.7</span>
-                <div className={cx("stars")}>
-                  <span>★ ★ ★ ★ ☆</span>
-                </div>
-              </div>
-              <div className={cx("action-buttons")}>
-                <button className={cx("detail-button")}>Xem chi tiết</button>
-                <button className={cx("book-button")}>Đặt khám ngay</button>
-              </div>
-            </div>
-          </div>
-          <div className={cx("card-content")}>
-            <div className={cx("hospital-logo")}>
-              <img src={logo} />
-            </div>
-            <div className={cx("hospital-details")}>
-              <h3>Bệnh viện đa khoa Singapore (Singapore General Hospital)</h3>
-              <p><IoLocationOutline /> Bukit Merah, Central Region, Singapore</p>
-              <div className={cx("rating")}>
-                <span>4.7</span>
-                <div className={cx("stars")}>
-                  <span>★ ★ ★ ★ ☆</span>
-                </div>
-              </div>
-              <div className={cx("action-buttons")}>
-                <button className={cx("detail-button")}>Xem chi tiết</button>
-                <button className={cx("book-button")}>Đặt khám ngay</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className={cx("hospital-details-container")}>
-          <div className={cx("hospital-detail")}>
-            <img src={logo} className={cx("hospital-details-logo")} />
-            <h4 className={cx("hospital-detail-title")}>Phòng Khám Đa Khoa Pháp Anh</h4>
-            <p className={cx("hospital-detail-time")}><strong><CiClock2 /></strong> Thứ 2 - Thứ 7: 07:00 - 16:00 | Chủ Nhật: 07:00 - 12:00</p>
-            <hr/>
-            <p className={cx("hospital-detail-text")}>Phòng khám Đa khoa Pháp Anh là một trong những cơ sở y tế chuyên khám tổng quát và xét nghiệm uy tín tại TP. Hồ Chí Minh và các tỉnh lân cận. Để hỗ trợ người dân tiếp cận dễ dàng hơn với các dịch vụ chất lượng tại đây, phòng khám đã gia nhập Medpro - ứng dụng đặt lịch khám uy tín hàng đầu tại Việt Nam.</p>
+            <div className={cx('right-content')}></div>
           </div>
         </div>
       </div>
     </div>
+    //className={cx('')}
   );
 }
 
