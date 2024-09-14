@@ -53,7 +53,7 @@ function Facility() {
       </div>
       <div className={cx('content ex')}>
         <div className={cx('content-item')}>
-          <div className={cx('row')}>
+          <div className={cx('row','flex-row')}>
             <div className={cx('left-content')}>
               <div className={cx('content-detail')}>
                 <div className={cx('conent-data')}>
@@ -79,8 +79,34 @@ function Facility() {
                     </div>
                 </div>
               </div>
+              <div className={cx('content-detail')}>
+                <div className={cx('conent-data')}>
+                  <div className={cx('content-image')}><span><span><img src={logo}/></span></span></div>
+                  <div className={cx('content-body')}>
+                    <div className={cx('content-text')}>
+                      <h3 className={cx('content-title-text')}>Phòng Khám Đa Khoa Pháp Anh</h3>
+                      <p className={cx('content-address')}><IoLocationOutline/>222-224-226 Nguyễn Duy Dương, Phường 4, Quận 10, TP.HCM</p>
+                      <p className={cx('content-ratting')}>(4,7)
+                        <ul>
+                          <li><IoStar/></li>
+                          <li><IoStar/></li>
+                          <li><IoStar/></li>
+                          <li><IoStar/></li>
+                          <li><IoStar/></li>
+                        </ul>
+                      </p>
+                    </div>
+                  </div>
+                  <div className={cx('content-button-ex')}>
+                      <button><span>Xem chi tiết</span></button>
+                      <button className={cx('content-button-color')}><span>Đặt khám ngay </span></button>
+                    </div>
+                </div>
+              </div>
             </div>
-            <div className={cx('right-content')}></div>
+            <div className={cx('right-content')}>
+              <div>asadsadasdasdasdasda</div>
+            </div>
           </div>
         </div>
       </div>
